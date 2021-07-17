@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatbot</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/chat.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body style="background-image: url('/static/background.jpg')">
+    <section>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6 intro">
+            <h1 class="text__1">Vidhya.ai</h1>
+            <h5 class="text__2 text-center">Reimagine your business with Conversational AI</h5>
+            <h7 class="text__3 text-center">Unleash the potential of AI-powered chatbots to increase sales and generate 4X revenue.</h7>
+
+            <div class="app__video">
+              <div class="container gif">
+                <img src="static/chatbot.gif" alt="Not Found!">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 about">
+            <div class="container about__text">
+              <h3 class="text-center">About Vidhya</h3>
+              <p>Vidhya is a virtual assistant AI technology developed by Chinmoy Raj Deka mostly for Data Science Coaching Institute.
+                It is designed using NLP (Natural Language Processing), CNN (Convolution Neural Network), Flask web framework and libraries for web scraping.
+                It is capable of responsing to queries related to Data Science course as well as most of other queries.
+                Users can make their queries related to the course by simply typing out them.
+                Whereas queries related to other than the course should be made by typing "google" infront of them.
+                The average waiting time for Vidhya's response is 3 seconds, and currently developer is working on decreasing the response time.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- === chatbot ==== -->
+    <section>
+      <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with Vidhya!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/static/scripts/chat.js"></script>
+</html>
